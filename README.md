@@ -11,3 +11,5 @@
 ### Step 4:
 #### Once all the dependencies have been installed then we can run the application by giving following command.
 > npm start
+### Step 5:
+#### The application would be successfully opened in your default browser window to display hello world.
