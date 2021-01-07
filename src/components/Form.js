@@ -1,15 +1,8 @@
 import React from "react";
 import TextField from "./TextField";
+import { TextFieldNames } from "../config";
 
 const Form = () => {
-  const textFieldNames = [
-    "Username",
-    "Interest",
-    "Email",
-    "Phone",
-    "College",
-    "Department",
-  ];
   return (
     <form>
       {textFieldNames.map((textFieldName) => {
