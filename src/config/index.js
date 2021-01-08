@@ -8,6 +8,6 @@ const textFieldNames = [
   "Department",
 ];
 
-const config = { textFieldNames };
+const Config = { textFieldNames };
 
-export default config;
+export default Config;
