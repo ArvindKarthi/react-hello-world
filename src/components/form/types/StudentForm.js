@@ -1,8 +1,9 @@
 import React from "react";
 import TextField from "../elements/TextField";
-import { textFieldNames } from "../../../config";
+import config from "../../../config/index";
 
 const StudentForm = () => {
+  const { textFieldNames } = config;
   return (
     <form>
       {textFieldNames.map((textFieldName, index) => {

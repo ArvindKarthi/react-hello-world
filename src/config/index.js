@@ -1,5 +1,5 @@
 // names of the textfields that are to be outputed.
-export const textFieldNames = [
+const textFieldNames = [
   "Username",
   "Interest",
   "Email",
@@ -7,3 +7,7 @@ export const textFieldNames = [
   "College",
   "Department",
 ];
+
+const config = { textFieldNames };
+
+export default config;
