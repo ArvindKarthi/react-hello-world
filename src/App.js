@@ -1,10 +1,10 @@
 import Greeting from "./components/Greeting";
-import Form from "./components/Form";
+import StudentForm from "./components/FormComponents/FormTypes/StudentForm";
 function App() {
   return (
     <div>
       <Greeting />
-      <Form />
+      <StudentForm />
     </div>
   );
 }
