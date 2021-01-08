@@ -1,5 +1,4 @@
 import React from "react";
-import "./TextField.css";
 
 const TextField = ({ fieldName }) => {
   return (

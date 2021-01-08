@@ -1,5 +1,5 @@
 import React from "react";
-import TextField from "../elements/TextField";
+import TextField from "../elements/textField/index";
 import config from "../../../config/index";
 
 const StudentForm = () => {
