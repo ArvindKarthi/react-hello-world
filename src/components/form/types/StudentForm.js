@@ -6,8 +6,8 @@ const StudentForm = () => {
   const { textFieldAttributes } = Config;
   return (
     <form>
-      {textFieldAttributes.map(({ labelName, size }, index) => {
-        return <TextField key={index} labelName={labelName} size={size} />;
+      {textFieldAttributes.map((attributes, index) => {
+        return <TextField key={index} attributes={attributes} />;
       })}
     </form>
   );

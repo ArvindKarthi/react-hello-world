@@ -1,12 +1,18 @@
 import React from "react";
 
-const TextField = ({ labelName, size }) => {
+const TextField = ({ attributes }) => {
+  const { label, size } = attributes;
   return (
-    <div>
-      <label htmlFor={labelName} className={`d-block f-${size}`}>
-        {labelName}
+    <div className={"form-group"}>
+      <label htmlFor={label} className={`d-block fn-${size} form-label`}>
+        {label}
       </label>
-      <input type="text" name={labelName} className={`d-${size}`} required />
+      <input
+        type="text"
+        name={label}
+        className={`form-control form-control-${size} `}
+        required
+      />
     </div>
   );
 };
