@@ -52,17 +52,17 @@ html {
   margin-bottom: 0.5rem;
 }
 
-.form-control-small {
+.form-control-sm {
   min-height: 15px;
   font-size: 1rem;
 }
 
-.form-control-medium {
+.form-control-md {
   min-height: 18.5px;
   font-size: 1.2rem;
 }
 
-.form-control-large {
+.form-control-lg {
   min-height: 22px;
   font-size: 1.4rem;
 }
@@ -74,15 +74,15 @@ html {
 }
 
 /* reusable font sizes */
-.fn-small {
+.fn-sm {
   font-size: 1.15rem;
 }
 
-.fn-medium {
+.fn-md {
   font-size: 1.4rem;
 }
 
-.fn-large {
+.fn-lg {
   font-size: 1.65rem;
 }
 

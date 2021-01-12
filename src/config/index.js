@@ -1,23 +1,32 @@
 // attributes for each text fields that would make each textField component different.
 const textFieldAttributes = [
-  { label: "Username", size: "small", placeholder: "fullname", type: "text" },
   {
-    label: "Password",
-    size: "small",
-    placeholder: "password",
+    name: "Username",
+    size: "sm",
+    placeholder: "Full Name",
+    type: "text",
+    isLabel: true,
+  },
+  {
+    name: "Password",
+    size: "sm",
+    placeholder: "Password",
     type: "password",
+    isLabel: false,
   },
   {
-    label: "College",
-    size: "small",
-    placeholder: "college name",
+    name: "College",
+    size: "sm",
+    placeholder: "College Name",
     type: "text",
+    isLabel: true,
   },
   {
-    label: "Department",
-    size: "small",
-    placeholder: " department",
+    name: "Department",
+    size: "sm",
+    placeholder: "Department Name",
     type: "text",
+    isLabel: false,
   },
 ];
 
