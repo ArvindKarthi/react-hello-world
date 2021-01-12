@@ -1,7 +1,7 @@
 import React from "react";
 
 const TextField = ({ attributes }) => {
-  const { label, size } = attributes;
+  const { label, size, placeholder } = attributes;
   return (
     <div className="form-group">
       <label htmlFor={label} className={`d-block fn-${size} form-label`}>
@@ -12,6 +12,7 @@ const TextField = ({ attributes }) => {
         name={label}
         className={`form-control form-control-${size} `}
         id={label}
+        placeholder={placeholder}
         required
       />
     </div>
