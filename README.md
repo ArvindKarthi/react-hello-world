@@ -17,17 +17,19 @@
 ### Step 1: 
 #### To use TextField component without label you can use the following syntax,
 ```
+import TextField from "./components/form/elements/textField";
+
 function App(){
   const attributes = {
     type:"type of field",
     name:"name of the field",
-    size:"size of the field to dynamic styling", //allows to dynamically style the text field component.
+    size:"size of the field to dynamic styling", // allows to dynamically style the text field component.
     placeholder:"to mention what this field takes as input"
   }
   return (
     <form className="form">
       <div className="form-group">
-        <TextField attributes={attributes}/>
+        <TextField attributes={attributes}/> // // to create a text field component.
       </div>
     </form>
   );
@@ -36,18 +38,21 @@ function App(){
 ### Step 2:
 #### To use TextField component with label use the following syntax,
 ```
+import TextField from "./components/form/elements/textField";
+import TextField from "./components/form/elements/label";
+
 function App(){
   const attributes = {
     type:"type of field",
     name:"name of the field",
-    size:"size of the field to dynamic styling", //allows to dynamically style the text field component.
+    size:"size of the field to dynamic styling", // allows to dynamically style the text field component.
     placeholder:"to mention what this field takes as input"
   }
   return (
     <form className="form">
       <div className="form-group">
-        <Label attributes={attributes}/>
-        <TextField attributes={attributes}/>
+        <Label attributes={attributes}/> // to create the label component.
+        <TextField attributes={attributes}/> // to create a text field component.
       </div>
     </form>
   );
