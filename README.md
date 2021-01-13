@@ -13,3 +13,16 @@
 > npm start
 ### Step 5:
 #### The application would be successfully opened in your default browser window to display hello world.
+## To use the Label and TextField component follow the below steps,
+### Step 1: 
+#### If incase you're inneed of TextField component without label you can use the following syntax,
+```
+function App(){
+  return (
+    <form>
+      <TextField type={"type of field"} name={"name of the field"} size={"size of the field to dynamic styling"} placeholder={"to mention what this field takes as input"}/>
+    </form>
+  );
+}
+```
+
