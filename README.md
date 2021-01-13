@@ -18,11 +18,20 @@
 #### If incase you're inneed of TextField component without label you can use the following syntax,
 ```
 function App(){
+  const attributes = {
+    type:"type of field",
+    name:"name of the field",
+    size:"size of the field to dynamic styling",
+    placeholder:"to mention what this field takes as input"
+  }
   return (
-    <form>
-      <TextField type={"type of field"} name={"name of the field"} size={"size of the field to dynamic styling"} placeholder={"to mention what this field takes as input"}/>
+    <form className="form">
+      <div className="form-group">
+        <TextField attributes={attributes}/>
+      </div>
     </form>
   );
 }
 ```
+
 
