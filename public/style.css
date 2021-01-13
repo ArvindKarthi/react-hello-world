@@ -1,4 +1,105 @@
-/* text field starts */
-.label {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --main-bg: #4a5759;
+  /* form colour theme 1*/
+  --theme-pink-bg: #ffffff;
+  --theme-pink-font: #e27396;
+}
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CSS RESET */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* REUSABLE COMPONENTS */
+/* reusable displays */
+.d-block {
   display: block;
+}
+
+/* reusable form styles */
+
+.form {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem 5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #777;
+}
+
+.form-group {
+  padding: 0.5rem 0;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-control-sm {
+  min-height: 15px;
+  font-size: 1rem;
+}
+
+.form-control-md {
+  min-height: 18.5px;
+  font-size: 1.2rem;
+}
+
+.form-control-lg {
+  min-height: 22px;
+  font-size: 1.4rem;
+}
+
+/* student form theme style starts */
+.form-theme-pink {
+  background-color: var(--theme-pink-bg);
+  color: var(--theme-pink-font);
+}
+
+/* reusable font sizes */
+.fn-sm {
+  font-size: 1.15rem;
+}
+
+.fn-md {
+  font-size: 1.4rem;
+}
+
+.fn-lg {
+  font-size: 1.65rem;
+}
+
+/* app style starts */
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--main-bg);
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  /* media query for form */
+  .form {
+    padding: 1rem 0.5rem;
+  }
 }

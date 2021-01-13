@@ -1,13 +1,16 @@
 import React from "react";
 
-const TextField = ({ fieldName }) => {
+const TextField = ({ attributes }) => {
+  const { type, name, size, placeholder } = attributes;
   return (
-    <div>
-      <label htmlFor={fieldName} className="label">
-        {fieldName}
-      </label>
-      <input type="text" name={fieldName} required />
-    </div>
+    <input
+      type={type}
+      name={name}
+      className={`form-control form-control-${size} `}
+      id={name}
+      placeholder={placeholder}
+      required
+    />
   );
 };
 
