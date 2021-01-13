@@ -15,13 +15,13 @@
 #### The application would be successfully opened in your default browser window to display hello world.
 ## To use the Label and TextField component follow the below steps,
 ### Step 1: 
-#### If incase you're inneed of TextField component without label you can use the following syntax,
+#### To use TextField component without label you can use the following syntax,
 ```
 function App(){
   const attributes = {
     type:"type of field",
     name:"name of the field",
-    size:"size of the field to dynamic styling",
+    size:"size of the field to dynamic styling", //allows to dynamically style the text field component.
     placeholder:"to mention what this field takes as input"
   }
   return (
@@ -33,5 +33,24 @@ function App(){
   );
 }
 ```
-
-
+### Step 2:
+#### To use TextField component with label use the following syntax,
+```
+function App(){
+  const attributes = {
+    type:"type of field",
+    name:"name of the field",
+    size:"size of the field to dynamic styling", //allows to dynamically style the text field component.
+    placeholder:"to mention what this field takes as input"
+  }
+  return (
+    <form className="form">
+      <div className="form-group">
+        <Label attributes={attributes}/>
+        <TextField attributes={attributes}/>
+      </div>
+    </form>
+  );
+}
+```
+## Thus you can follow the above steps to create a react application and add form fields to it.
